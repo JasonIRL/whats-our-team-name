@@ -26,5 +26,6 @@
     },
     "scm.diffDecorations": "all",
     "workbench.commandPalette.history": 10,
-    "workbench.editor.closeOnFileDelete": true
+    "workbench.editor.closeOnFileDelete": true,
+    "python.pythonPath": "C:\\Users\\jgunning\\.virtualenvs\\whats-our-team-name-DirD2WsP\\Scripts\\python.exe"
 }
