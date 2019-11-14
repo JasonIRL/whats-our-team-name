@@ -1,6 +1,6 @@
 import random
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -845,10 +845,4 @@ def index():
         "Nylon Pendulum Movement",
     ]
     team_name_today = name_list[random.randint(0, (len(name_list) - 1))]
-    return (
-        "<link href='https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap' rel='stylesheet'>"
-        "<div style='height: 90%; width: 100%; display: flex;"
-        " flex-direction: column; justify-content: center; text-align: center;'>"
-        f"<h1 style=\"font-family: 'Major Mono Display';\">{team_name_today}</h1>"
-        "</div>"
-    )
+    return render_template("index.html", name=team_name_today)
