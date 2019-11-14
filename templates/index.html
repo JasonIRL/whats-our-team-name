@@ -119,5 +119,25 @@
       transform: translate(-49%, -53%);
     }
   }
+
+  .another-one {
+    position: absolute;
+    bottom: 5%;
+    color: #fff;
+    font-family: "Major Mono Display";
+    text-decoration: none;
+  }
+
+  .brg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #808080;
+    font-family: "Major Mono Display";
+  }
 </style>
-<h1 data-text="{{name}}"><span>{{name}}</span></h1>
+<h1 data-text="{{name}}">
+  <span>{{name}}</span>
+</h1>
+<a class="another-one" href="{{ url_for('index') }}">ANOTHER ONE</a>
+<small class="brg">Backwoods Research Group</small>
