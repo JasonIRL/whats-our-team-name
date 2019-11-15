@@ -845,4 +845,5 @@ def index():
         "Nylon Pendulum Movement",
     ]
     team_name_today = name_list[random.randint(0, (len(name_list) - 1))]
-    return render_template("index.html", name=team_name_today)
+    style = random.randint(1, 2)
+    return render_template("index.html", name=team_name_today, style=style)
